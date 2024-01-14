@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tooltip</title>
+    <style>
+        #box {
+            position: relative;
+
+            width: 700px;
+            height: 300px;
+            background-color: #888888;
+            border-radius: 15px;
+        }
+        .tip {
+            height: 0;
+            width: 0;
+            border-top: 30px solid #888888;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+
+            position: absolute;
+            /* bottom: anchor(top); */
+            bottom: -30px;
+            left: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="tip" anchor="box"></div>
+    </div>
+</body>
+</html>
