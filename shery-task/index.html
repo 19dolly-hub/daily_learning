@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHERY TASK</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="menu-btn" onclick="openMenu()">_menu</div>
+    <div class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Studio</li>
+      </ul>
+    </div>
+    <main class="main-container">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, sed
+          ipsa dignissimos voluptatem inventore voluptatibus.
+        </p>
+      <h1>Digital <br> Design</h1>
+    </main>
+    <script>
+        const openMenu = () => {
+            const menu = document.querySelector('.menu');
+            const main = document.querySelector('.main-container');
+            menu.classList.toggle('active');
+            main.classList.toggle('active');
+            document.body.classList.toggle("stop-scroll");
+        }
+    </script>
+  </body>
+</html>
